@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp">
+
+            <ImageView
+                android:id="@+id/imgOnCard"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/discord" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameTextview"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toRightOf="@id/cardView"
+            android:text="taasir"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timeTextview"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toRightOf="@id/nameTextview"
+            android:text="10:43 am"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/msgTextview"
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/nameTextview"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toRightOf="@id/cardView"
+            android:text="hello, how are you ?"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/horline"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/cardView"
+            android:layout_marginTop="-10dp"
+            android:background="@android:color/darker_gray"
+            android:text="____________________________" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
